@@ -3,7 +3,7 @@ import { Home } from "./containers/Home";
 
 function App() {
   return (
-    <div className="App my-5 text-lg">
+    <div className="App">
       <Home />
     </div>
   );
