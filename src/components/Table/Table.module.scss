@@ -1,0 +1,9 @@
+.wrapper {
+  @apply table-fixed border-collapse border border-gray-500 w-full;
+  th {
+    @apply border border-gray-600;
+  }
+  td {
+    @apply border border-gray-700;
+  }
+}
