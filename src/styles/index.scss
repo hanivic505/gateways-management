@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("./_variables.css");
+
+h1 {
+  @apply text-2xl my-10;
+}
+.actions {
+  button {
+    @apply bg-blue border-blue border-2 px-8 py-1.5 text-white hover:bg-yellow-500;
+  }
+}

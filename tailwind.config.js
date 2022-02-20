@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   future: {
     purgeLayersByDefault: true,
@@ -15,9 +17,6 @@ module.exports = {
     },
   },
   theme: {
-    fontFamily: {
-      sans: ["Moderat"],
-    },
     extend: {
       screens: {
         xs: "425px",
@@ -97,5 +96,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
