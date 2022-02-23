@@ -21,6 +21,7 @@ function Table({ data, labels, pKey, actionColumn }: IProps) {
           {labels.map((field) => (
             <th key={field.fieldName}>{field.label}</th>
           ))}
+          <th></th>
         </tr>
       </thead>
       <tbody>

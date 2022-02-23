@@ -1,4 +1,4 @@
-import { IGateway } from "../components/Gateways";
+import { IGateway } from "../containers/Gateways";
 
 export const data: IGateway[] = [
   {

@@ -1,15 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { DevicesList } from "./components/Devices";
-import Gateways from "./components/Gateways";
+import { Navigation } from "./components/Navigation";
+import Devices from "./containers/Devices";
+import Gateways from "./containers/Gateways";
 
 function App() {
   return (
     <div className="App" data-testid="main-app">
       <Router>
+        <Navigation />
         <Routes>
           <Route path="/*" element={<Gateways />} />
           <Route path="/gateways/*" element={<Gateways />} />
-          <Route path="/devices" element={<DevicesList />} />
+          <Route path="/devices/*" element={<Devices />} />
         </Routes>
       </Router>
     </div>

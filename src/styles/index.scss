@@ -8,6 +8,30 @@ h1 {
 }
 .actions {
   button {
-    @apply bg-blue border-blue border-2 px-8 py-1.5 text-white hover:bg-yellow-500;
+    @apply bg-blue border-cyan border-2 px-8 py-1.5 text-white hover:bg-yellow-500 hover:border-yellow-800;
+  }
+}
+.table-actions {
+  @apply flex flex-1 flex-wrap gap-1;
+}
+input {
+  &[type="text"].errors {
+    border-color: red;
+  }
+}
+.status {
+  @apply bg-red w-5 block h-5 relative;
+  &:after {
+    content: "In-Active";
+    position: absolute;
+    left: 125%;
+    white-space: nowrap;
+  }
+  &.active {
+    @apply bg-green;
+    &:after {
+      content: "Active";
+      display: block;
+    }
   }
 }

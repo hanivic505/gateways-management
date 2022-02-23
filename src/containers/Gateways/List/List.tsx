@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { IGateway } from "..";
 import { data } from "../../../mocks/Gateways";
-import { Table } from "../../Table";
+import { Table } from "../../../components/Table";
 import s from "./List.module.scss";
 import { schema } from "./schema";
 
@@ -9,7 +9,7 @@ function GatewaysList() {
   const navigate = useNavigate();
   const renderActionColumn = (data: IGateway) => {
     return (
-      <div className="flex">
+      <div className="table-actions">
         <button
           type="button"
           onClick={(e) => navigate(`/gateways/${data.serialNumber}`)}
@@ -33,6 +33,7 @@ function GatewaysList() {
   };
   return (
     <div className={s.wrapper}>
+      <h1>Gateways List</h1>
       <div className="toolbar">
         <Link to="/gateways/add">Create</Link>
       </div>

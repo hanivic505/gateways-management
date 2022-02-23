@@ -1,4 +1,4 @@
-import { IDevice } from "../components/Devices";
+import { IDevice } from "../containers/Devices";
 
 export const data: IDevice[] = [
   {
@@ -10,7 +10,7 @@ export const data: IDevice[] = [
   {
     uid: 13,
     vendor: "TP-Link",
-    dateCreated: new Date("14/3/2021"),
+    dateCreated: new Date("4/23/2021"),
     status: true,
   },
   {
@@ -22,7 +22,7 @@ export const data: IDevice[] = [
   {
     uid: 15,
     vendor: "Roaster",
-    dateCreated: new Date("23/6/2021"),
+    dateCreated: new Date("3/26/2021"),
     status: false,
   },
   {

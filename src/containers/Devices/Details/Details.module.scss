@@ -1,0 +1,7 @@
+.wrapper {
+  @apply container md:w-1/2 mx-auto;
+
+  label {
+    @apply font-bold;
+  }
+}

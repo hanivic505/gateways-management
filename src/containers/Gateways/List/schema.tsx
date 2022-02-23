@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { IDevice } from "../../Devices";
-import { IFieldSchema } from "../../Table/Table";
+import { IFieldSchema } from "../../../components/Table/Table";
 
 export const schema: IFieldSchema[] = [
   { fieldName: "serialNumber", label: "Serial Number" },

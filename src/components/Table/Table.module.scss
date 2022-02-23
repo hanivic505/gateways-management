@@ -1,9 +1,15 @@
 .wrapper {
   @apply table-fixed border-collapse border border-gray-500 w-full;
   th {
-    @apply border border-gray-600;
+    @apply border border-gray-600 py-3 px-5 bg-yellow-700 text-yellow-300;
   }
   td {
-    @apply border border-gray-700;
+    @apply border border-gray-700 py-3 px-5 bg-yellow-100;
+  }
+  a {
+    @apply text-blue;
+  }
+  button {
+    @apply bg-yellow-400 border-yellow-500 px-2 py-0.5 text-yellow-700 hover:bg-yellow-500 text-xs;
   }
 }
